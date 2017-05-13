@@ -37,34 +37,64 @@
 <body>
  <div class="wrapper">
 	<h1 class="page-header textCenter">New York Times Search</h1>
-
-	<div class="row" id="searchForm">
+	
+	<div class="row paddingStyle">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
-		<form>
-		  <div class="form-group">
-		    <label for="searchTerm">Search Term:</label>
-		    <input type="text" class="form-control" id="searchInput" placeholder="">
-		  </div>
-		  <div class="form-group">
-		    <label for="numberRecords">Number of Records to Retrive:</label>
-		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
-		  </div>
-		  <div class="form-group">
-		    <label for="startYear">Start Year (Optional):</label>
-		    <input type="text" id="startYearInput">
-		  </div>
-		  <div class="form-group">
-		    <label for="endYear">End Year (Optional):</label>
-		    <input type="text" id="endYearInput">
-		  </div>
-		  <button type="submit" class="btn btn-default" id="searchButton">Search</button>
-		  <button type="submit" class="btn btn-default" id="clearResultsButton">Clear Results</button>
-		</form>
-		</div>
-	</div>
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"> <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Search Parameters</h3>
+			  </div>
+				<div class="panel-body">
+				    <div id="searchForm">
+						<form>
+						 	<div class="form-group">
+						    	<label for="searchTerm">Search Term:</label>
+						    	<input type="text" class="form-control" id="searchInput" placeholder="">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="numberRecords">Number of Records to Retrive:</label>
+								<select class="form-control">
+								  <option>1</option>
+								  <option>5</option>
+								  <option>10</option>
+								</select>
+						  	</div>					  
+							 <div class="form-group">
+							    <label for="startYear">Start Year (Optional):</label>
+							    <input type="text" id="startYearInput">
+							 </div>
+						  	<div class="form-group">
+						    	<label for="endYear">End Year (Optional):</label>
+						    	<input type="text" id="endYearInput">
+						  	</div>
+						  	<button type="submit" class="btn btn-default" id="searchButton">
+						  		<span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+						  	</button>
+						  	<button type="submit" class="btn btn-default" id="clearResultsButton">
+						  	<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Clear Results</button>
+						</form>
+					</div>
+				</div>
+			</div>
+	 	</div>
+ 	</div>
+		
 
-	<div class="row" id="resultsArea">
+	<div class="row paddingStyle">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">	
+			<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">
+			    		<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Top Articles</h3>
+			  	</div>
+				<div class="panel-body">
+				    <div class="row" id="resultsArea">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
  </div>

@@ -1,29 +1,31 @@
     var api_key="d6d61d725d27418cbd8ac3ff86a4454a";
-    $("#search").on("click", function() {
+    $(document).ready(function() {
+
+      $("#searchButton").on("click", function() {
+      event.preventDefault();
       var article;
-      var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json&api_key="+ api_key;
+      var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api_key="+ api_key;
 
       $.ajax({
           url: queryURL,
           method: "GET"
         })
         .done(function(response) {
-          var results = response.data;
-
-          // for (var i = 0; i < results.length; i++) {
-          //   // var gifDiv = $("<div class='item'>");
-
-          //   // var rating = results[i].rating;
-
-          //   // var p = $("<p>").text("Rating: " + rating);
-
-          //   // var personImage = $("<img>");
-          //   // personImage.attr("src", results[i].images.fixed_height.url);
-
-          //   // gifDiv.prepend(p);
-          //   // gifDiv.prepend(personImage);
-
-          //   // $("#gifs-appear-here").prepend(gifDiv);
-          // }
+          console.log(response);
+          var results = response.docs;
+          var title = results[0].headline.main;
+          var author = results[0].source;
+          var section = results[0].subsection_name;
+          var date = results[0].pub_date;
+          var site = results[0].web_url;
+          
         });
     });
+
+
+
+
+
+
+    });
+    

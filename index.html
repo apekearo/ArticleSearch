@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+   	<meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+    
+    <!-- Bring in bootstrap stylesheet -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <!-- Bring in personal stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bring in bootswatch theme -->
+    <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.css">
+
+    <!-- Bring in google font -->
+    <link href="https://fonts.googleapis.com/css?family=Rationale|Russo+One" rel="stylesheet">
+
+    <!-- Bring in javascript -->
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
+ <div class="wrapper" width ="80%">
+	<h1 class="page-header">New York Times Search</h1>
+
+	<div class="row" id="searchForm">
+
+		<form>
+		  <div class="form-group">
+		    <label for="searchTerm">Search Term:</label>
+		    <input type="text" class="form-control" id="searchInput" placeholder="">
+		  </div>
+		  <div class="form-group">
+		    <label for="numberRecords">Number of Records to Retrive:</label>
+		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+		  </div>
+		  <div class="form-group">
+		    <label for="startYear">Start Year(Optional):</label>
+		    <input type="text" id="startYearInput">
+		  </div>
+		  <div class="form-group">
+		    <label for="endYear">End Year(Optional):</label>
+		    <input type="text" id="endYearInput">
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+
+	
+
+	</div>
+ </div>
+
+
 
 </body>
 </html>

@@ -4,7 +4,7 @@
    	<meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -32,14 +32,15 @@
     <link href="https://fonts.googleapis.com/css?family=Rationale|Russo+One" rel="stylesheet">
 
     <!-- Bring in javascript -->
-    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/articleSearch.js"></script>
 </head>
 <body>
- <div class="wrapper" width ="80%">
-	<h1 class="page-header">New York Times Search</h1>
+ <div class="wrapper">
+	<h1 class="page-header textCenter">New York Times Search</h1>
 
 	<div class="row" id="searchForm">
-
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
 		<form>
 		  <div class="form-group">
 		    <label for="searchTerm">Search Term:</label>
@@ -50,19 +51,20 @@
 		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
 		  </div>
 		  <div class="form-group">
-		    <label for="startYear">Start Year(Optional):</label>
+		    <label for="startYear">Start Year (Optional):</label>
 		    <input type="text" id="startYearInput">
 		  </div>
 		  <div class="form-group">
-		    <label for="endYear">End Year(Optional):</label>
+		    <label for="endYear">End Year (Optional):</label>
 		    <input type="text" id="endYearInput">
 		  </div>
-		  <button type="submit" class="btn btn-default">Submit</button>
+		  <button type="submit" class="btn btn-default" id="searchButton">Search</button>
+		  <button type="submit" class="btn btn-default" id="clearResultsButton">Clear Results</button>
 		</form>
-
-	
-
+		</div>
 	</div>
+
+
  </div>
 
 
